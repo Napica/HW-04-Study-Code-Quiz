@@ -20,9 +20,10 @@ body {
 .container {
     width: 800px;
     max-width: 80%;
-    background-color: white;
+    background-color: rgb(241, 243, 215);
     border-radius: 5px;
     border: solid;
+    border-color: rgb(216, 218, 183);
     border-width: 5px;
     padding: 10px;
 
@@ -34,7 +35,7 @@ body {
 
 .btn-grid {
     display: grid;
-    grid-template-columns:  repeat(1, auto);
+    
     gap: 10px;
     margin: 20px;
 }
@@ -44,6 +45,22 @@ body {
     border-radius: 5px;
     border-color: black;
     outline: none;
+}
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.startBtn {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px, 20px;
+}
+
+.hide {
+    display: none;
 }
 
 /* footer {
