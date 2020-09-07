@@ -1,9 +1,10 @@
-var start = document.getElementById("startBtn");
-var question = document.getElementById("#question");
-var choice1 = document.getElementById("#answer1");
-var choice2 = document.getElementById("#answer2");
-var choice3 = document.getElementById("#answer3");
-var choice4 = document.getElementById("#answer4");
+var startTheQuiz = document.getElementById("start-Btn");
+var quizContent = document.getElementById("quizQuestionBox");
+var question = document.getElementById("question");
+var choice1 = document.getElementById("answer1");
+var choice2 = document.getElementById("answer2");
+var choice3 = document.getElementById("answer3");
+var choice4 = document.getElementById("answer4");
 
 // Arrary of objects to contain questions and answers
 var questions = [
@@ -49,3 +50,11 @@ var questions = [
     correctAnswer: "answer1",
   }
 ];
+
+startTheQuiz.addEventListener('click', startQuiz);
+
+function startQuiz(){
+    // console.log("This registered");
+    startTheQuiz.classList.add("hide");
+   quizContent.classList.remove("hide");
+}
