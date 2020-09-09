@@ -9,9 +9,6 @@ var choice4 = document.getElementById("answer4");
 var score = 0
 var currentQuestionIndex = 0
 var quizQuestions = questions.question
-var choice1= question.choice1
-var choice2
-
 
 // Arrary of objects to contain questions and answers
 var questions = [

@@ -13,10 +13,6 @@ body {
     align-items: center;
 }
 
-/* .card-header {
-    background-color: purple;
-} */
-
 .container {
     width: 800px;
     max-width: 80%;
@@ -62,8 +58,3 @@ body {
 .hide {
     display: none;
 }
-
-/* footer {
-    height: 10vh;
-    background-color: purple
-} */
