@@ -7,75 +7,55 @@ var choice2 = document.getElementById("answer2");
 var choice3 = document.getElementById("answer3");
 var choice4 = document.getElementById("answer4");
 var score = 0
-var currentQuestion = 0
-
+var currentQuestionIndex = 0
+var quizQuestions = questions.question
+var choice1= question.choice1
+var choice2
 
 
 // Arrary of objects to contain questions and answers
 var questions = [
   {
     question: "Commonly used data types DO NOT include: ",
-    choice1: "1) Strings",
-    choice2: "2) Booleans",
-    choice3: "3) Alerts",
-    choice4: "4) Numbers",
-    correctAnswer: "answer3",
+    choices: ["1) Strings, 2) Booleans, 3) Alerts, 4) Numbers"],
+    correctAnswer: "3) alerts"
   },
   {
     question: "The condition of an If/Else statement is enclosed within____.",
-    choice1: "1) Quotes",
-    choice2: "2) Curley Brackets",
-    choice3: "3) Parentheses",
-    choice4: "4) Square Brackets",
-    correctAnswer: "answer2",
+    choice1: ["1) Quotes, 2) Curley Brackets, 3) Parentheses, 4) Square Brackets"],
+    correctAnswer: "2) Curley Brackets",
   },
   {
     question: "Arrays in JavaScript can be used to store _______.",
-    choice1: "1) Numbers and Strings",
-    choice2: "2) Other Arrays",
-    choice3: "3) Booleans",
-    choice4: "4) All of the above",
-    correctAnswer: "answer4",
+    choice1: ["1) Numbers and Strings,2) Other Arrays, 3) Booleans, 4) All of the above"],
+    correctAnswer: "4) All of the above",
   },
   {
     question:
       "String values must be enclosed within _______ when being assigned to variables.",
-    choice1: "1) Commas",
-    choice2: "2) Curly Brackets",
-    choice3: "3) Quotes",
-    choice4: "4) Parentheses",
-    correctAnswer: "answer3",
+    choice1: ["1) Commas, 2) Curly Brackets, 3) Quotes, 4) Parentheses"],
+    correctAnswer: "3) Quotes",
   },
   {
     question:
       "A very useful tool used during development and debugging for printing content to the debugger is: ",
-    choice1: "1) console.log()",
-    choice2: "2) JavaScript",
-    choice3: "3) for loops",
-    choice4: "4) If/Else conditionals",
-    correctAnswer: "answer1",
+    choice1: ["1) console.log(), 2) JavaScript, 3) for loops, 4) If/Else conditionals"],
+    correctAnswer: "1) console.log()",
   },
 ];
 
-var askedQuestions, currentQuestionIndex 
 
 startTheQuiz.addEventListener("click", startQuiz);
 
-
-
 function startQuiz() {
-  // console.log("This registered");
   startTheQuiz.classList.add("hide");
-  askedQuestions = questions.sort()
-  currentQuestionIndex = 0;
   quizContent.classList.remove("hide");
   Quiz();
 }
 
-
-function Quiz() {
-  showQuestion(askedQuestions[currentQuestionIndex]);
-}
+// function Quiz() {
+//   for (var i = 0; i < );
+// }
 
 function showQuestion(question){
   questionEl.innerText = question.question;
