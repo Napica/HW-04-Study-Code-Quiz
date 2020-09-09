@@ -1,10 +1,15 @@
+// Elements to pull from
 var startTheQuiz = document.getElementById("start-Btn");
 var quizContent = document.getElementById("quizQuestionBox");
-var question = document.getElementById("question");
+var questionEl = document.getElementById("question");
 var choice1 = document.getElementById("answer1");
 var choice2 = document.getElementById("answer2");
 var choice3 = document.getElementById("answer3");
 var choice4 = document.getElementById("answer4");
+var score = 0
+var currentQuestion = 0
+
+
 
 // Arrary of objects to contain questions and answers
 var questions = [
@@ -42,19 +47,36 @@ var questions = [
     correctAnswer: "answer3",
   },
   {
-    question: "A very useful tool used during development and debugging for printing content to the debugger is: ",
+    question:
+      "A very useful tool used during development and debugging for printing content to the debugger is: ",
     choice1: "1) console.log()",
     choice2: "2) JavaScript",
     choice3: "3) for loops",
     choice4: "4) If/Else conditionals",
     correctAnswer: "answer1",
-  }
+  },
 ];
 
-startTheQuiz.addEventListener('click', startQuiz);
+var askedQuestions, currentQuestionIndex 
 
-function startQuiz(){
-    // console.log("This registered");
-    startTheQuiz.classList.add("hide");
-   quizContent.classList.remove("hide");
+startTheQuiz.addEventListener("click", startQuiz);
+
+
+
+function startQuiz() {
+  // console.log("This registered");
+  startTheQuiz.classList.add("hide");
+  askedQuestions = questions.sort()
+  currentQuestionIndex = 0;
+  quizContent.classList.remove("hide");
+  Quiz();
+}
+
+
+function Quiz() {
+  showQuestion(askedQuestions[currentQuestionIndex]);
+}
+
+function showQuestion(question){
+  questionEl.innerText = question.question;
 }
