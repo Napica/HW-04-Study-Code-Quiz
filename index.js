@@ -50,9 +50,7 @@ function startQuiz() {
   Quiz();
 }
 
-// function Quiz() {
-//   for (var i = 0; i < );
-// }
+
 
 function showQuestion(question){
   questionEl.innerText = question.question;

@@ -16,20 +16,26 @@
     <!-- local CSS -->
     <link rel="stylesheet" href="./assets/index.css" />
   </head>
-  <body>
 
+  <body>
     <div class="container">
-      <div id="quizQuestionBox" class="hide">
-        <div id="question" class="newQuestionBox">e</div>
-        <div id="answerButtons" class="btn-grid">
-          <button id= "answer1" class="btn">Answer 1</button>
-          <button id= "answer2" class="btn">Answer 2</button>
-          <button id= "answer3" class="btn">Answer 3</button>
-          <button id= "answer4" class="btn">Answer 4</button>
-        </div>
+      <div class="timer">Time: <span id="time">0</span></div>
+
+      <div id="startPrompt" class="introduction">
+        <h1>Press [Start] button to begin exercise</h1>
+        <button id="start-Btn" class="startBtn btn">Start</button>
       </div>
-      <div class ="introduction">
-        <button id="start-Btn" class="startBtn btn">Click to begin exercise.</button>
+
+      <div id="quizQuestionBox" class="hide">
+        <div id="question" class="newQuestionBox"></div>
+        <div id="answerButtons" class="answerButtons"></div>
+      </div>
+
+      <div id="submit-score" class="hide">
+        <h3>The total score is: <span id="total-score"></span></h3>
+        <p>Please enter your name below</p>
+        <input type="text" id="name" />
+        <button id="submit">Submit</button>
       </div>
     </div>
 
