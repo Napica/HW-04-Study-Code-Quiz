@@ -1,14 +1,15 @@
 // Elements to pull from
-var startTheQuiz = document.getElementById("start-Btn");
-var quizContent = document.getElementById("quizQuestionBox");
+var startPromptEl = document.getElementById("startPromt");
+var startEl = document.querySelector(".start");
+var startBtnEl = document.getElementById("start-btn")
+var questionBoxEl = document.getElementById("quizQuestionBox");
+var submitEl = document.getElementById("submit-score");
 var questionEl = document.getElementById("question");
-var choice1 = document.getElementById("answer1");
-var choice2 = document.getElementById("answer2");
-var choice3 = document.getElementById("answer3");
-var choice4 = document.getElementById("answer4");
-var score = 0
-var currentQuestionIndex = 0
-var quizQuestions = questions.question
+var answerEl = document.getElementById("answerButtons");
+var timerEl = document.getElementById("time");
+var score = 0;
+var currentQuestionIndex = 0;
+
 
 // Arrary of objects to contain questions and answers
 var questions = [
@@ -42,12 +43,11 @@ var questions = [
 ];
 
 
-startTheQuiz.addEventListener("click", startQuiz);
+startBtnEl.addEventListener("click", startQuiz);
 
 function startQuiz() {
-  startTheQuiz.classList.add("hide");
-  quizContent.classList.remove("hide");
-  Quiz();
+  startEl.classList.add("hide");
+  questionBoxEl.classList.remove("hide");
 }
 
 
