@@ -20,11 +20,6 @@ body {
     text-align: center;
 }
 
-.btn-grid {
-    display: grid;
-    gap: 10px;
-    margin: 20px;
-}
  
 .btn {
     background-color: rgb(206, 106, 206);
@@ -33,11 +28,6 @@ body {
     outline: none;
 }
 
-.introduction {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .startBtn {
     font-size: 1.5em;
