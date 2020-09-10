@@ -18,11 +18,16 @@
   </head>
 
   <body>
+    <header class="jumbotron jumbotron-fluid">
+        <h1 class="display-4 text-center">Study Code Quiz</h1>
+      </div>
+    </header>
+    
     <div class="container">
       <div class="timer">Time: <span id="time">0</span></div>
 
       <div id="startPrompt" class="start">
-        <h2>Press [Start] button to begin exercise</h2>
+        <h2 class ="center" >Press [Start] button to begin exercise</h2>
         <button id="start-Btn" class="startBtn btn">Start</button>
       </div>
 
@@ -31,7 +36,7 @@
         <div id="answerButtons" class="answerButtons"></div>
       </div>
 
-      <div id="submit-score" class="hide">
+      <div id="submit-score" class="hide submit-area">
         <h3>The total score is: <span id="total-score"></span></h3>
         <p>Please enter your name below</p>
         <input type="text" id="name" />

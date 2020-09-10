@@ -7,8 +7,9 @@ var submitEl = document.getElementById("submit-score");
 var questionEl = document.getElementById("question");
 var answerEl = document.getElementById("answerButtons");
 var timerEl = document.getElementById("time");
-var secondsLeft = 180;
+var submitEl = document.getElementById("submit-score")
 
+var secondsLeft = 180;
 var score = 0;
 var currentQuestionIndex = 0;
 
@@ -49,22 +50,25 @@ var questions = [
   },
 ];
 
-startBtnEl.addEventListener("click", function(){
-    startEl.classList.add("hide");
-    questionBoxEl.classList.remove("hide");
-    // console.log("this works")
-    showQuestion();
-    setTimer();
+startBtnEl.addEventListener("click", function () {
+  startEl.classList.add("hide");
+  questionBoxEl.classList.remove("hide");
+  // console.log("this works")
+  showQuestion();
+  setTimer();
 });
 
-
-function showQuestion(){
+function showQuestion() {
   if (currentQuestionIndex < questions.length) {
     questionEl.innerHTML = questions[currentQuestionIndex].question;
-    for (var i = 0; i < questions[currentQuestionIndex].choice1.length; i++){
+    for (var i = 0; i < questions[currentQuestionIndex].choice1.length; i++) {
       var newAnswer = document.createElement("button");
       newAnswer.textContent = questions[currentQuestionIndex].choice1[i];
-      newAnswer.setAttribute("data-name", "data-choice-" + i );
+      newAnswer.setAttribute("data-name", "data-choice-" + i);
+      newAnswer.setAttribute(
+        "style",
+        "background:#ce6ace; text-align: center; margin: 10px; padding 10px;"
+      );
       answerEl.append(newAnswer);
     }
   }
@@ -77,7 +81,11 @@ function setTimer() {
     if (secondsLeft === 0) {
       clearInterval(timerInterval);
       questionBoxEl.classList.add("hide");
-      // add submit score section. remove hide
+      submitForm();
     }
-  }, 1000);
+  }, 10);
+}
+
+function submitForm() {
+  submitEl.classList.remove("hide")
 }

@@ -1,40 +1,38 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-body {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 
-.timer{
-    float: right;
+.timer {
+  float: right;
 }
 
 .newQuestionBox {
+  text-align: center;
+}
+
+.center{
+    text-align: center;
+}
+.answerButtons{
     text-align: center;
 }
 
- 
-.btn {
-    background-color: rgb(206, 106, 206);
-    border-radius: 5px;
-    border-color: black;
-    outline: none;
-}
-
-
 .startBtn {
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: 10px, 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: rgb(206, 106, 206);
+  border-radius: 5px;
+  border-color: black;
+  outline: none;
 }
 
 .hide {
-    display: none;
+  display: none;
+}
+
+.submit-area {
+    text-align: center;
 }
