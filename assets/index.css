@@ -13,9 +13,6 @@
   text-align: center;
 }
 
-.center{
-    text-align: center;
-}
 .answerButtons{
     text-align: center;
 }
@@ -26,6 +23,8 @@
   background-color: rgb(206, 106, 206);
   border-radius: 5px;
   border-color: black;
+  margin: 15px;
+  padding: 15px;
   outline: none;
 }
 

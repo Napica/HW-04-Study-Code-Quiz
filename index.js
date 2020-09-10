@@ -7,7 +7,7 @@ var submitEl = document.getElementById("submit-score");
 var questionEl = document.getElementById("question");
 var answerEl = document.getElementById("answerButtons");
 var timerEl = document.getElementById("time");
-var submitEl = document.getElementById("submit-score")
+var submitEl = document.getElementById("submit-score");
 
 var secondsLeft = 180;
 var score = 0;
@@ -23,21 +23,21 @@ var questions = [
   {
     question: "The condition of an If/Else statement is enclosed within____.",
     choice1: [
-      "1) Quotes, 2) Curley Brackets, 3) Parentheses, 4) Square Brackets",
+      "1) Quotes", "2) Curley Brackets", "3) Parentheses", "4) Square Brackets"
     ],
     correctAnswer: "2) Curley Brackets",
   },
   {
     question: "Arrays in JavaScript can be used to store _______.",
     choice1: [
-      "1) Numbers and Strings,2) Other Arrays, 3) Booleans, 4) All of the above",
+      "1) Numbers and Strings", "2) Other Arrays", "3) Booleans", "4) All of the above"
     ],
     correctAnswer: "4) All of the above",
   },
   {
     question:
       "String values must be enclosed within _______ when being assigned to variables.",
-    choice1: ["1) Commas, 2) Curly Brackets, 3) Quotes, 4) Parentheses"],
+    choice1: ["1) Commas", "2) Curly Brackets", "3) Quotes", "4) Parentheses"],
     correctAnswer: "3) Quotes",
   },
   {
@@ -53,7 +53,6 @@ var questions = [
 startBtnEl.addEventListener("click", function () {
   startEl.classList.add("hide");
   questionBoxEl.classList.remove("hide");
-  // console.log("this works")
   showQuestion();
   setTimer();
 });
@@ -83,7 +82,7 @@ function setTimer() {
       questionBoxEl.classList.add("hide");
       submitForm();
     }
-  }, 10);
+  }, 1000);
 }
 
 function submitForm() {

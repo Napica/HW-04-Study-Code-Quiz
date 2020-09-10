@@ -1,46 +1,46 @@
-<!-- # HW-04-Study-Code-Quiz
+#  Re-view
 
-Requirements to complete this assignment
+As students or aspiring learners, it is good to often brush up on the items that a person added to their knowledge.  If this is not done, it is possible to forget what one has learned.  It is good to review what was covered to ensure that the knowledge has become solidified in one's own mind. 
 
-# 04 Web APIs: Code Quiz
 
-As you proceed in your career as a web developer, you will probably be asked to complete a coding assessment, which is typically a combination of multiple-choice questions and interactive challenges. Build a timed code quiz with multiple-choice questions. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+## Table of Contents 
 
-## User Story
+*[Purpose](#purpose)
+*[Instillation](#instillation)
+*[Features](#features)
+*[Credits](#credits)
 
-```
-AS A coding bootcamp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+## Purpose 
 
-## Acceptance Criteria
+The purpose of this application is to give a quiz about the basics of learning coding.  These questions are presented in multiple choice and, as a whole, is timed.  This will help the learner review and see how well they did.  
 
-```
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
-```
+## Instillation 
+**To edit/use the application, please follow the steps to pull the repository from GitHub through Git Bash and pull the script into VSCode, provided all three items are already installed on a local network.**
 
-The following animation demonstrates the application functionality:
+Instillation steps are as follows:
+1. Access the repository at [Git Hub] https://github.com/Napica/HW-04-Study-Code-Quiz. 
+2. Click on the code section (in green) and clone the SSH key.  
+3. Once the SSH key is cloned, open the terminal through Git Bash.
+4. Find or create the folder the user wants to work in and enter the following commands the the Git terminal:
+    1. git clone [copied link]    (*this will allow access the repository to the local computer.*)
+    2. git pull (*this will pull all the lines of script from the local repository.*)
+    3. code . (*This will extract the code and link the paths to VSCode for review/editing/uploading)
 
-![code quiz](./Assets/04-web-apis-homework-demo.gif)
+#### [For Direct Access to GitHub provided application site]
 
-### Review
+Please click on the link below: 
+1. https://napica.github.io/HW-04-Study-Code-Quiz/
 
-You are required to submit the following for review:
+## Features
 
-* The URL of the functional, deployed application.
+![itemLinks](./assets/timer-image.png)
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+This application comes with a timer.  If the timer reaches 0, the user will be sent to a forms page to submit their name.  
 
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved. -->
+![itemLinks](./assets/submit-image.png)
+
+This application comes with a submit section to show the scores of the individual who took the quiz. 
+
+## Credit
+
+I would like to thank the help of my TA's/Tutors/Classmates for the assisstance in making this application possible. 
